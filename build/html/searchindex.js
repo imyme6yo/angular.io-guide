@@ -1,0 +1,1 @@
+Search.setIndex({docnames:["index"],envversion:51,filenames:["index.rst"],objects:{},objnames:{},objtypes:{},terms:{hello:0,index:0,modul:0,page:0,search:0,sphinx:0},titles:["Welcome to angular.io - guide&#8217;s documentation!"],titleterms:{angular:0,document:0,guid:0,indic:0,tabl:0,welcom:0}})
