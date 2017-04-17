@@ -10,7 +10,7 @@ angular.io - GUIDE
    :maxdepth: 2
    :caption: Contents:
 
-why 'google'_
+why google_
 
 .. _google: www.google.com
 
