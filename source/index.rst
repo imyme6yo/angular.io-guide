@@ -10,7 +10,9 @@ Welcome to angular.io - guide's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+'google<www.google.com>'_ < - google
 
+_google: www.google.com
 
 Indices and tables
 ==================

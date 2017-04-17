@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="kr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>&lt;no title&gt; &#8212; [KR]angular.io - guide 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p>H1 &#8211; ARCHITECTURE OVERVIEW</p>
+<p>Angular 앱의 기본 요소</p>
+<p>Angular는 HTML와 JavaScript 또는 JavaScript로 컴파일 되는 TypeScript와 같은 언어로 클라이언트 앱을 만드는 프레임워크이다.</p>
+<p>프레임워크는 몇몇은 코어, 몇몇은 선택적으로 사용가능한 라이브러리들로 이뤄져 있다.</p>
+<p>Angular 마크업이 있는 HTML템플릿과 템플릿을 관리하는 컴포넌트 클래스, 서비스의 추가적인 앱 로직, 컴포넌트와 서비스를 포함하고 있는 모
+듈로 Angular 앱을 작성한다.</p>
+<p>(Angular 앱은 템플릿, 컴포넌트, 서비스 그리고 모듈로 이뤄져 있다.)</p>
+<p>root 모듈을 부트스트랩해 앱을 실행한다. Angular은 브라우저에 앱의 콘텐츠를 보여주고 사용자와 상호작용 한다.</p>
+<p>물론 이 것 이외의 내용도 있R다. 자세한 내용은 이 문서에서 다룰 것이다. 지금은 큰 그림에 주목하자.</p>
+<p>구조에 대한 그림은 Angular 앱의 8개의 주요 구성요소를 보여준다</p>
+<p>&#8216;Modules&lt;<a class="reference external" href="https://angular.io/docs/ts/latest/guide/architecture.html#modules">https://angular.io/docs/ts/latest/guide/architecture.html#modules</a>&gt;&#8217;_
+&#8216;Components&lt;<a class="reference external" href="https://angular.io/docs/ts/latest/guide/architecture.html#components">https://angular.io/docs/ts/latest/guide/architecture.html#components</a>&gt;&#8217;_
+&#8216;Templates&lt;<a class="reference external" href="https://angular.io/docs/ts/latest/guide/architecture.html#templates">https://angular.io/docs/ts/latest/guide/architecture.html#templates</a>&gt;&#8217;_
+&#8216;Metadata&lt;<a class="reference external" href="https://angular.io/docs/ts/latest/guide/architecture.html#metadata">https://angular.io/docs/ts/latest/guide/architecture.html#metadata</a>&gt;&#8217;_
+&#8216;Data binding&lt;<a class="reference external" href="https://angular.io/docs/ts/latest/guide/architecture.html#data-binding">https://angular.io/docs/ts/latest/guide/architecture.html#data-binding</a>&gt;&#8217;_
+&#8216;Directives&lt;<a class="reference external" href="https://angular.io/docs/ts/latest/guide/architecture.html#directives">https://angular.io/docs/ts/latest/guide/architecture.html#directives</a>&gt;&#8217;_
+&#8216;Services&lt;<a class="reference external" href="https://angular.io/docs/ts/latest/guide/architecture.html#services">https://angular.io/docs/ts/latest/guide/architecture.html#services</a>&gt;&#8217;_
+&#8216;Dependency injection&lt;<a class="reference external" href="https://angular.io/docs/ts/latest/guide/architecture.html#dependency-injection">https://angular.io/docs/ts/latest/guide/architecture.html#dependency-injection</a>&gt;&#8217;_</p>
+<p>위의 구성요소에 대해서 알아볼 것이다.</p>
+<p>이 문서의 코드들은 &#8216;live example&#8217;_과 &#8216;예제 코드 다운로드&#8217;_ 에서 확인할 수 있다.</p>
+<p>H2 &#8211; Modules</p>
+<p>angular 앱은 모듈로 이뤄져 있으면 Angular는 Angular 모듈 또는 NgModule이라고 불리는 모듈화 시스템을 가지고 있다.
+Angular Module은 다룰 내용이 많다. 여기서는 단지 모듈에 대해서 소개만 한다. &#8216;Angular Modules&#8217;_ 페이제에서 좀 더 자세히 다룰 것이다.</p>
+<p>모든 Angular 앱은 최소 하나의 모듈 클래스 &#8216;root module&#8217;_을 가지며 편의상 이름을 AppModule이라고 이름 짓는다.</p>
+<p>작은 앱은 root 하나로 이뤄진 반면 대부분의 앱은 많은 기능 모듈로 이뤄져 있다.</p>
+<p>루트 또는 기능 하나의 Angular 모듈은 은 &#64;NgModule 데코레이터를 가지는 클래스이다.</p>
+<p>::
+데코레이터는 JavaScript 클래스들을 변경하는 함수이다. Angular는 클래스에 메타데이터를 추가해 클래스가 어떠한 의미를 가지고 어떻게 동작하는지 알려주는 많은 데코레이터를 가지고 있다. 웹에 데코레이터에 대에서 &#8216;더 많은 내용&#8217;_들이 있다
+.. _더 많은 내용: <a class="reference external" href="https://medium.com/google-developers/exploring-es7-decorators-76ecb65fb841#.x5c2ndtx0">https://medium.com/google-developers/exploring-es7-decorators-76ecb65fb841#.x5c2ndtx0</a></p>
+<p>gModule은 모듈에 대한 속성을 가지고 있는 하나 메타데이터 객체를 가지는 데코레이터 함수이다. 중요한 속성들은 다음과 같다:</p>
+<blockquote>
+<div><ul class="simple">
+<li>declarations - 모듈에 포함되는 뷰 클래스들이다. Angular는 3가지의 뷰클래스들을 가지고 있다: &#8216;컴포넌트&#8217;_, &#8216;디렉티브&#8217;_, &#8216;파이프&#8217;_</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li>imports - export한 클래스들 현재 모듈의 컴포넌트 템플릿에서 필요한 다른 모듈들</li>
+<li>providers - 서비스의 전역 집합을 제공하는 서비스들의 생성자 이다;서비스들은 앱의 모든 부분에서 접근이 가능하게 된다.</li>
+<li>bootstrap - 루트 컴포넌트라고 불리는 앱의 첫 화면이다. 다른 화면들을 가지고 있다. 오직 루트 모듈만 bootstrap 속성에 설정한다.</li>
+</ul>
+</div></blockquote>
+<p>아래는 간단한 root 모듈 이다:</p>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Architecture.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, imyme6yo.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/Architecture.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
