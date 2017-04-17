@@ -14,7 +14,7 @@ why google_
 
 .. _google: http://www.google.com
 
-hyperlink `naver<http://www.naver.com>`_ naver
+hyperlink `naver <http://www.naver.com>`_ naver
 
 Indices and tables
 ==================
