@@ -3,16 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to angular.io - guide's documentation!
-==============================================
+angular.io - GUIDE
+==================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-'google<www.google.com>'_ < - google
+why 'google'_
 
-_google: www.google.com
+
 
 Indices and tables
 ==================
@@ -23,3 +23,5 @@ Indices and tables
 
 
 Hello Sphinx
+
+.. _google: www.google.com
