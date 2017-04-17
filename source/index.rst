@@ -12,6 +12,7 @@ angular.io - GUIDE
 
 why 'google'_
 
+.. _google: www.google.com
 
 
 Indices and tables
@@ -24,4 +25,3 @@ Indices and tables
 
 Hello Sphinx
 
-.. _google: www.google.com
