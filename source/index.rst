@@ -12,7 +12,7 @@ angular.io - GUIDE
 
 why google_
 
-.. _google: www.google.com
+.. _google: http://www.google.com
 
 
 Indices and tables
