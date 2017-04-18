@@ -10,7 +10,7 @@ angular.io - GUIDE
    :maxdepth: 2
    :caption: Contents:
 
-[Overview](./GUIDE/Overview)
+`Overview<./GUIDE/Overview.rst>`__ 
 
 
 
