@@ -21,4 +21,4 @@ Themes
 | body row 4   |            |
 +--------------+------------+
 
-.. _'QuickStart': https://angular.io/docs/ts/latest/quickstart.html
+.. _QuickStart: https://angular.io/docs/ts/latest/quickstart.html
