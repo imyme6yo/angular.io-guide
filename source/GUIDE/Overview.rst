@@ -11,14 +11,14 @@ Themes
 이 문서 주요 주제제로 나눠져 있다. 모든 문서는 이러한 주제에 여러 페이지들이 있다.
 
 
-+-------------+------------+
-|QuickStart_  | column 2   |
-+-------------+------------+
-| 'Guide'_    | Cells may s|
-+-------------+------------+
-| body row 3  | Cells may  |
-+-------------+ span rows. |
-| body row 4  |            |
-+-------------+------------+
++--------------+------------+
+| QuickStart_  | column 2   |
++--------------+------------+
+| 'Guide'_     | Cells may s|
++--------------+------------+
+| body row 3   | Cells may  |
++--------------+ span rows. |
+| body row 4   |            |
++--------------+------------+
 
 .. _'QuickStart': https://angular.io/docs/ts/latest/quickstart.html
