@@ -12,7 +12,7 @@ Themes
 
 
 +-------------+------------+
-|'QuickStart'_| column 2   |
+|QuickStart_  | column 2   |
 +-------------+------------+
 | 'Guide'_    | Cells may s|
 +-------------+------------+
