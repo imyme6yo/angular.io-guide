@@ -10,9 +10,9 @@ angular.io - GUIDE
    :maxdepth: 2
    :caption: Contents:
 
-why google_
+[Overview](./GUIDE/Overview)
 
-.. _google: http://www.google.com
+
 
 hyperlink `naver <http://www.naver.com>`_ naver
 
