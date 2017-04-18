@@ -16,10 +16,10 @@ Themes
 +-----------------+------------+
 | 'Guide'_        | Cells may s|
 +-----------------+------------+
-| 'QuickStart1'_  | Cells may  |
+| `QuickStart1`_  | Cells may  |
 +-----------------+ span rows. |
 | body row 4      |            |
 +-----------------+------------+
 
 .. _QuickStart: https://angular.io/docs/ts/latest/quickstart.html
-.. _'QuickStart1': https://angular.io/docs/ts/latest/quickstart.html
+.. _`QuickStart1`: https://angular.io/docs/ts/latest/quickstart.html
